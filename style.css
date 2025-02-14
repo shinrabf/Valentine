@@ -1,0 +1,64 @@
+/* Gaya umum */
+body {
+    background-color: #ffebf0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Container utama */
+.container {
+    margin-top: 20px;
+}
+
+/* Foto pacar dengan rasio 1:1 */
+.profile-pic {
+    width: 200px; /* Bisa diubah sesuai kebutuhan */
+    height: 200px; /* Sama dengan width agar 1:1 */
+    border-radius: 20px; /* Bisa diubah atau dihapus jika mau kotak penuh */
+    object-fit: cover; /* Supaya gambar tidak terdistorsi */
+    border: 4px solid #ff4d6d; /* Warna border merah muda */
+    margin-bottom: 20px;
+}
+
+/* Efek judul Valentine's */
+.heartbeat {
+    font-size: 24px;
+    color: #ff2e63;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Gaya teks pesan */
+.message {
+    font-size: 18px;
+    color: #333;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 2s forwards 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animasi hati jatuh */
+.falling-heart {
+    position: fixed;
+    top: 0;
+    font-size: 24px;
+    color: #ff4d6d;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh); }
+}

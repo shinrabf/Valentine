@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tambahkan Foto Pacar -->
+        <img src="pacar.jpg" alt="Foto Pacarku" class="profile-pic">
+        
+        <h1 class="heartbeat">Happy Valentine's Day, Sayang! ❤️</h1>
+        <p class="message fade-in">
+          happy valentine’s, honeeyyy!. i just wanna say happy valentine’s day to you, and thank you for staying with me through all these months. i appreciate you more than words can say, and i’m so grateful to have you by my side. thank you for always being there, through the good times and the bad, for always understanding me, for supporting me no matter what. i can’t express how proud i am of you, of everything you’ve achieved, and of the person you are becoming. i wish you all the best in everything you do, and i hope you always remember that i’ll always be here, always proud of you, no matter what. thank you for everything, for all the little and big things you do, for your love, your patience, and your kindness. i’m beyond happy that we get to celebrate our first valentine’s together, and i hope this is just the first of many more to come. thank the lord for blessing me with someone as amazing as you. i can't even put into words how thankful i am for you. stay healthy, stay safe, and may the lord always protect you and your family. i love you so much, always and forever. 🤍😈‼️
+        </p>
+    </div>
+
+    <!-- Animasi Hati Jatuh -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("falling-heart");
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+        setInterval(createHeart, 300);
+    </script>
+
+</body>
+</html>
